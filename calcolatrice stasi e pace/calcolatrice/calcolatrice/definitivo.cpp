@@ -33,7 +33,7 @@ int main()
             
             cin>>scelta;
             if ( scelta<0 || scelta>11 )
-            {cout<<"Inserire un valore compreso tra 0 e 10"<<endl;
+            {cout<<"Inserire un valore compreso tra 0 e 11"<<endl;
                 cout<<""<<endl;
             }
         }
@@ -197,6 +197,7 @@ int main()
 			   }
         
                 break;
+            case 10
         }
     }
     while(scelta>= 0 && scelta <=9);

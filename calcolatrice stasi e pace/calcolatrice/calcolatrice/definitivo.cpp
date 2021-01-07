@@ -25,20 +25,19 @@ int main()
             cout<<"6)  Potenza;"         <<endl;
             cout<<"7)  Percentuale;"     <<endl;
             cout<<"8)  Media;"           <<endl;
-            
-            
             cout<<"9)  formula quadatica"<<endl;
-            cout<<"10) uscire "          <<endl;
+            cout<<"10) operazioni gradi" <<endl; 
+            cout<<"11) uscire "          <<endl;
             cout<<""<<endl;
             cout<<""<<endl;
             
             cin>>scelta;
-            if ( scelta<0 || scelta>10 )
+            if ( scelta<0 || scelta>11 )
             {cout<<"Inserire un valore compreso tra 0 e 10"<<endl;
                 cout<<""<<endl;
             }
         }
-        while( scelta<0 || scelta>10);
+        while( scelta<0 || scelta>11);
         switch (scelta)
         {
         //inizio casi

@@ -1,7 +1,6 @@
 ﻿  definitivo.cpp
-c:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\2_grado.h(12): warning C4474: 'printf': sono stati passati troppi argomenti per la stringa di formato
-  c:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\2_grado.h(12): note: con i segnaposto e i relativi parametri sono previsti argomenti variadic 0, ma sono stati specificati quelli 1
-c:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(8): warning C4101: 'R': variabile locale senza riferimenti
-c:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(8): warning C4101: 'D': variabile locale senza riferimenti
-  calcolatrice.vcxproj -> C:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\Debug\calcolatrice.exe
-  calcolatrice.vcxproj -> C:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\Debug\calcolatrice.pdb (Partial PDB)
+C:\Users\Utente\source\repos\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\2_grado.h(12,68): warning C4474: 'printf': sono stati passati troppi argomenti per la stringa di formato
+C:\Users\Utente\source\repos\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\2_grado.h(12,68): message : con i segnaposto e i relativi parametri sono previsti argomenti variadic 0, ma sono stati specificati quelli 1
+C:\Users\Utente\source\repos\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(8,21): warning C4101: 'R': variabile locale senza riferimenti
+C:\Users\Utente\source\repos\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(8,19): warning C4101: 'D': variabile locale senza riferimenti
+  calcolatrice.vcxproj -> C:\Users\Utente\Source\Repos\stracazzo\calcolatrice stasi e pace\calcolatrice\Debug\calcolatrice.exe

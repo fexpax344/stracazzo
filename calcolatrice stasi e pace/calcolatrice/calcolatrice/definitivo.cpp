@@ -200,7 +200,7 @@ int main()
             case 10
         }
     }
-    while(scelta>= 0 && scelta <=9);
+    while(scelta>= 0 && scelta <=10);
    
     return 0;
 }

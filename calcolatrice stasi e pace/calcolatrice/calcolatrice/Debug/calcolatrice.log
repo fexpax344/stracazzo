@@ -1,6 +1,5 @@
 ﻿  definitivo.cpp
 C:\Users\Utente\source\repos\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\2_grado.h(12,68): warning C4474: 'printf': sono stati passati troppi argomenti per la stringa di formato
 C:\Users\Utente\source\repos\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\2_grado.h(12,68): message : con i segnaposto e i relativi parametri sono previsti argomenti variadic 0, ma sono stati specificati quelli 1
-C:\Users\Utente\source\repos\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(8,21): warning C4101: 'R': variabile locale senza riferimenti
-C:\Users\Utente\source\repos\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(8,19): warning C4101: 'D': variabile locale senza riferimenti
-  calcolatrice.vcxproj -> C:\Users\Utente\Source\Repos\stracazzo\calcolatrice stasi e pace\calcolatrice\Debug\calcolatrice.exe
+C:\Users\Utente\source\repos\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(201,9): error C2143: errore di sintassi: ':' mancante prima di '}'
+C:\Users\Utente\source\repos\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(201,9): error C2059: errore di sintassi: '}'

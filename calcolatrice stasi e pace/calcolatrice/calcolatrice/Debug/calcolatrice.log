@@ -1,4 +1,10 @@
 ﻿  definitivo.cpp
 C:\Users\Utente\source\repos\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\2_grado.h(12,68): warning C4474: 'printf': sono stati passati troppi argomenti per la stringa di formato
 C:\Users\Utente\source\repos\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\2_grado.h(12,68): message : con i segnaposto e i relativi parametri sono previsti argomenti variadic 0, ma sono stati specificati quelli 1
-C:\Users\Utente\source\repos\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(5,10): fatal error C1083: Non è possibile aprire il file inclusione: 'gradi.h': No such file or directory
+C:\Users\Utente\source\repos\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\gradi.h(13,7): warning C4553: '==': risultato dell'espressione non usato. Si intendeva '='?
+C:\Users\Utente\source\repos\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(10,26): warning C4101: 'R': variabile locale senza riferimenti
+C:\Users\Utente\source\repos\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(10,23): warning C4101: 'D': variabile locale senza riferimenti
+  gradi.cpp
+C:\Users\Utente\source\repos\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\gradi.h(13,7): warning C4553: '==': risultato dell'espressione non usato. Si intendeva '='?
+  Generazione del codice in corso...
+  calcolatrice.vcxproj -> C:\Users\Utente\source\repos\stracazzo\calcolatrice stasi e pace\calcolatrice\Debug\calcolatrice.exe

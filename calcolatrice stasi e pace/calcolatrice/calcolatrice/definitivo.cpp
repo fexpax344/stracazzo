@@ -252,6 +252,7 @@ int main()
             gradi.Primi(P, p);
             gradi.Secondi(S, s);
             gradi.Gradi(G, g);
+			gradi.print();
         }
     } while (scelta >= 0 && scelta <= 10);
 

@@ -1,4 +1,7 @@
 #pragma once
+#include <iostream>
+using namespace std;
+
 class gradi {
 public:
 	float r1, r2, fg, fs, fp;
@@ -21,9 +24,12 @@ public:
 	void Gradi(float g, float G) {
 		fg = g + G;
 	}
+	void print()
+	{
 	cout << "La media e' " << fg << endl;
 	cout << "La media e' " << fp << endl;
 	cout << "La media e' " << fs << endl;
+	}
 
 };
 

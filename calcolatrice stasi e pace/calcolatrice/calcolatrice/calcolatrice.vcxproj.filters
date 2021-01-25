@@ -18,9 +18,15 @@
     <ClCompile Include="definitivo.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
+    <ClCompile Include="gradi.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="2_grado.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="gradi.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
   </ItemGroup>

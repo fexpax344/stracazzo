@@ -235,22 +235,22 @@ int main()
             break;
         case 10: //operazioni gradi
             cout << "primo valore" << endl;
-            printf("gradi: ");
-            scanf_s("%f", &G);
+            cout <<"gradi: ";
+            cin >> G;
             printf("primi: ");
-            scanf_s("%f", &P);
+            cin >> P;
             printf("secondi: ");
-            scanf_s("%f", &S);
+            cin >> S;
             cout << "secondo valore" << endl;
             printf("gradi: ");
-            scanf_s("%f", &g);
+            cin >> g;
             printf("primi: ");
-            scanf_s("%f", &p);
+            cin >> p;;
             printf("secondi: ");
-            scanf_s("%f", &s);
+            cin >> s;
             gradi gradi;
-            gradi.Primi(P, p);
             gradi.Secondi(S, s);
+            gradi.Primi(P, p);
             gradi.Gradi(G, g);
 			gradi.print();
         }

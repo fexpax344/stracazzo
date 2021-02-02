@@ -4,30 +4,34 @@ BasicDegree::BasicDegree(int degrees, int first, int seconds)
 	: degrees(degrees), first(first), seconds(seconds)
 {}
 
+void BasicDegree::print()
+{
+	std::cout << degrees << "° " << first << "' " << seconds << "\"" << std::endl;
+}
+
 BasicDegree& BasicDegree::operator+(BasicDegree & right)
 {
-	void Secondi(float s, float S) {
-		fs = s + S;
-		if (fs >= 60) {
-			fs -= 60;
-			Rs = 1;
-		}
-		else {
-			Rs = 0;
-		}
+	int rest = 0;
+
+	seconds += right.seconds;
+	if (seconds >= 60) {
+		seconds -= 60;
+		rest = 1;
 	}
-	void Primi(float p, float P) {
-		fp = p + P + Rs;
-		if (fp >= 60) {
-			fp -= 60;
-			Rp = 1;
-		}
-		else {
-			Rp = 0;
-		}
+	else {
+		rest = 0;
 	}
-	void Gradi(float g, float G) {
-		fg = g + G + Rp;
+	
+	first = first + right.first + rest;
+	if (first >= 60) {
+		first -= 60;
+		rest = 1;
 	}
-	return right;
+	else {
+		rest = 0;
+	}
+
+	degrees = degrees + right.degrees + rest;
+
+	return *this;
 }

@@ -7,6 +7,8 @@ public:
 	// Constructor
 	BasicDegree(int degrees, int first, int seconds);
 
+	void print();
+
 	BasicDegree& operator+ (BasicDegree& right);
 
 private:

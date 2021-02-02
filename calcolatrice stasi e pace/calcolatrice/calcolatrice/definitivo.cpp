@@ -234,7 +234,7 @@ int main()
 
             break;
         case 10: //operazioni gradi
-            cout << "primo valore" << endl;
+            /*cout << "primo valore" << endl;
             cout <<"gradi: ";
             cin >> G;
             printf("primi: ");
@@ -247,7 +247,10 @@ int main()
             printf("primi: ");
             cin >> p;;
             printf("secondi: ");
-            cin >> s;
+            cin >> s;*/
+            BasicDegree bella(20, 30, 40);
+            BasicDegree ciao = bella + BasicDegree(50, 40, 30);
+            ciao.print();
         }
     } while (scelta >= 0 && scelta <= 10);
 

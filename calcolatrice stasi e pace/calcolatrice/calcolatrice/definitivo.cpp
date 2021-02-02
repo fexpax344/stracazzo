@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include "2_grado.h"
-#include "gradi.h"
+#include "BasicDegree.h"
 using namespace std;
 int main()
 {
@@ -248,11 +248,6 @@ int main()
             cin >> p;;
             printf("secondi: ");
             cin >> s;
-            gradi gradi;
-            gradi.Secondi(S, s);
-            gradi.Primi(P, p);
-            gradi.Gradi(G, g);
-			gradi.print();
         }
     } while (scelta >= 0 && scelta <= 10);
 

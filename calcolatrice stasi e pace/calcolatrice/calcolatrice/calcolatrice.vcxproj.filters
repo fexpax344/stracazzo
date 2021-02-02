@@ -18,7 +18,7 @@
     <ClCompile Include="definitivo.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
-    <ClCompile Include="gradi.cpp">
+    <ClCompile Include="BasicDegree.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
   </ItemGroup>
@@ -26,7 +26,7 @@
     <ClInclude Include="2_grado.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
-    <ClInclude Include="gradi.h">
+    <ClInclude Include="BasicDegree.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
   </ItemGroup>

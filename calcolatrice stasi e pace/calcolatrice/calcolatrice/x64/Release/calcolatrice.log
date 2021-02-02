@@ -1,11 +1,11 @@
 ﻿  definitivo.cpp
-c:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\2_grado.h(12): warning C4474: 'printf': sono stati passati troppi argomenti per la stringa di formato
-  c:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\2_grado.h(12): note: con i segnaposto e i relativi parametri sono previsti argomenti variadic 0, ma sono stati specificati quelli 1
-c:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\gradi.h(12): warning C4553: '==': risultato dell'espressione non usato. Si intendeva '='?
-c:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\gradi.h(20): warning C4553: '==': risultato dell'espressione non usato. Si intendeva '='?
-c:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(10): warning C4101: 'R': variabile locale senza riferimenti
-c:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(10): warning C4101: 'D': variabile locale senza riferimenti
+C:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\2_grado.h(12,68): warning C4474: 'printf': sono stati passati troppi argomenti per la stringa di formato
+C:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\2_grado.h(12,68): message : con i segnaposto e i relativi parametri sono previsti argomenti variadic 0, ma sono stati specificati quelli 1
+C:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(10,26): warning C4101: 'R': variabile locale senza riferimenti
+C:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(10,23): warning C4101: 'D': variabile locale senza riferimenti
+  BasicDegree.cpp
   Generazione codice in corso...
-  All 25 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Previous IPDB was built with incompatible compiler, fall back to full compilation.
+  All 21 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Generazione codice terminata
   calcolatrice.vcxproj -> C:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\x64\Release\calcolatrice.exe

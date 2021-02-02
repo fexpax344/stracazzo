@@ -111,11 +111,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="definitivo.cpp" />
-    <ClCompile Include="gradi.cpp" />
+    <ClCompile Include="BasicDegree.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="2_grado.h" />
-    <ClInclude Include="gradi.h" />
+    <ClInclude Include="BasicDegree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

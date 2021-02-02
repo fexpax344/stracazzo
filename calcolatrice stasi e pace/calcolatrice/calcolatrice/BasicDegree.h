@@ -10,6 +10,7 @@ public:
 	void print();
 
 	BasicDegree& operator+ (BasicDegree& right);
+	BasicDegree& operator- (BasicDegree& right);
 
 private:
 	int degrees;

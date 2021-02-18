@@ -5,6 +5,8 @@
 #include "BasicDegree.h"
 #include <string>
 #include <vector>
+#include <thread>
+#include <chrono>
 
 using namespace std;
 int main()
@@ -195,23 +197,24 @@ int main()
             
             double media;
             int i = 0;
-            int x = 0;
-            int sum = 0;
+            double x = 0;
+            double sum = 0;
+            std::string line;
 
             do
             {
-                std::string line;
+                x = 0;
+                std::cout << "Prossimo numero : ";
+                cin.ignore(100, '\n');
                 std::getline(std::cin, line);
-                if (line == "") {}
-                else {
-                    x = 0;
-                    std::cout << "Prossimo numero : ";
+                if (line != "") {
+                    x = stod(line);
                     std::cin >> x;
                     std::cout << endl;
                     sum += x;
                     i++;
                 }
-            } while (x != 0);
+            } while (line != "");
 
             media = sum / i;
             std::system("cls");

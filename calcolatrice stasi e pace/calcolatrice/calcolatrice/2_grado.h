@@ -9,7 +9,7 @@ class Equazioni{
             printf("L'equazione e' impossibile\n");
         else if(det==0) {
             x1=(-b)/(2*a);
-            printf("Ci sono due soluzioni reali coincidenti: &f\n",x1);
+            printf("Ci sono due soluzioni reali coincidenti: %f\n",x1);
            }
         else{
             x1=(-b-sqrt(det))/(2*a);

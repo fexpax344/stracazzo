@@ -1,0 +1,74 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12.2"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "calcolatrice",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "calcolatrice",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "calcolatrice",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "calcolatrice::@21e385c6322b211558fa",
+					"jsonFile" : "target-calcolatrice-Debug-904de06f4a9ab3e9da55.json",
+					"name" : "calcolatrice",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/dev/stracazzo/calcolatrice stasi e pace/calcolatrice/out/build/x64-Debug (impostazione predefinita)",
+		"source" : "C:/dev/stracazzo/calcolatrice stasi e pace/calcolatrice"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}

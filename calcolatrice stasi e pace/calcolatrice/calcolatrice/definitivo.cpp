@@ -4,6 +4,8 @@
 #include "2_grado.h"
 #include "BasicDegree.h"
 #include <string>
+#include <vector>
+
 using namespace std;
 int main()
 {
@@ -189,27 +191,28 @@ int main()
             std::cout << "Il risultato dell'ultima operazione e':" << r << endl;
             break;
         case 8: //media
-        { std::cout << "Quanti numeri\? ";
-        std::cin >> a;
-        std::cout << endl;
-        double media;
-        int i = 0;
-        while (i < a)
-        {
-            int x;
-            std::cout << "Prossimo numero : ";
-            std::cin >> x;
-            std::cout << endl;
-            media += x;
-            i++;
-        }
-        media /= a;
-        std::system("cls");
-        std::cout << "La media e' " << media << endl;
+        { 
+            
+            double media;
+            int i = 0;
+            int x = 0;
+            int sum = 0;
 
+            do
+            {
+                std::cout << "Prossimo numero : ";
+                std::cin >> x;
+                std::cout << endl;
+                sum += x;
+                x = 0;
+                i++;
+            } while (x);
 
+            media = sum / i;
+            std::system("cls");
+            std::cout << "La media e' " << media << endl;
+            break;
         }
-        break;
         case 9: //formula quadratica
             std::printf("coeficiente a: ");
             scanf_s("%f", &a);
@@ -234,18 +237,18 @@ int main()
             std::cout << "primo valore" << endl;
             std::cout <<"gradi: ";
             std::cin >> G;
-            std::printf("primi: ");
+            std::cout << ("primi: ");
             std::cin >> P;
-            std::printf("secondi: ");
+            std::cout <<("secondi: ");
             std::cin >> S;
             cout << "operazione" << endl;
             cin >> x;
             std::cout << "secondo valore" << endl;
-            std::printf("gradi: ");
+            std::cout <<("gradi: ");
             std::cin >> g;
-            std::printf("primi: ");
+            std::cout <<("primi: ");
             std::cin >> p;
-            std::printf("secondi: ");
+            std::cout <<("secondi: ");
             std::cin >> s;
             if(x ==(string) "+"){
                 BasicDegree bella(G, P, S);
@@ -256,7 +259,7 @@ int main()
                 BasicDegree ciao = bella - BasicDegree(g, p, s);
                 ciao.print();
             }else{
-                cout << "inserire un valore valido" << endl;
+                std::cout << "inserire un valore valido" << endl;
             }
        
         }
@@ -264,6 +267,3 @@ int main()
 
     return 0;
 }
-
-
-

@@ -1,8 +1,22 @@
 ﻿  definitivo.cpp
-C:\Users\Utente\source\repos\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\2_grado.h(12,68): warning C4474: 'printf': sono stati passati troppi argomenti per la stringa di formato
-C:\Users\Utente\source\repos\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\2_grado.h(12,68): message : con i segnaposto e i relativi parametri sono previsti argomenti variadic 0, ma sono stati specificati quelli 1
-C:\Users\Utente\source\repos\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(10,26): warning C4101: 'R': variabile locale senza riferimenti
-C:\Users\Utente\source\repos\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(10,23): warning C4101: 'D': variabile locale senza riferimenti
-  gradi.cpp
-  Generazione del codice in corso...
-  calcolatrice.vcxproj -> C:\Users\Utente\source\repos\stracazzo\calcolatrice stasi e pace\calcolatrice\Debug\calcolatrice.exe
+C:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(170,21): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(180,20): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(218,21): warning C4477: 'scanf_s': con la stringa di formato '%f' è necessario un argomento di tipo 'float *', ma il tipo dell'argomento variadic 1 è 'int *'
+C:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(229,40): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(230,37): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(254,41): warning C4244: 'argomento': conversione da 'float' a 'int'. Possibile perdita di dati.
+C:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(254,38): warning C4244: 'argomento': conversione da 'float' a 'int'. Possibile perdita di dati.
+C:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(254,35): warning C4244: 'argomento': conversione da 'float' a 'int'. Possibile perdita di dati.
+C:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(255,62): warning C4244: 'argomento': conversione da 'float' a 'int'. Possibile perdita di dati.
+C:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(255,59): warning C4244: 'argomento': conversione da 'float' a 'int'. Possibile perdita di dati.
+C:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(255,56): warning C4244: 'argomento': conversione da 'float' a 'int'. Possibile perdita di dati.
+C:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(258,41): warning C4244: 'argomento': conversione da 'float' a 'int'. Possibile perdita di dati.
+C:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(258,38): warning C4244: 'argomento': conversione da 'float' a 'int'. Possibile perdita di dati.
+C:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(258,35): warning C4244: 'argomento': conversione da 'float' a 'int'. Possibile perdita di dati.
+C:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(259,62): warning C4244: 'argomento': conversione da 'float' a 'int'. Possibile perdita di dati.
+C:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(259,59): warning C4244: 'argomento': conversione da 'float' a 'int'. Possibile perdita di dati.
+C:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(259,56): warning C4244: 'argomento': conversione da 'float' a 'int'. Possibile perdita di dati.
+C:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(13,26): warning C4101: 'R': variabile locale senza riferimenti
+C:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(13,14): warning C4101: 'a': variabile locale senza riferimenti
+C:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(13,23): warning C4101: 'D': variabile locale senza riferimenti
+  calcolatrice.vcxproj -> C:\dev\stracazzo\calcolatrice stasi e pace\calcolatrice\Debug\calcolatrice.exe

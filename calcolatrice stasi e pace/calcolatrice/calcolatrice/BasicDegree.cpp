@@ -42,22 +42,25 @@ BasicDegree& BasicDegree::operator-(BasicDegree& right)
 	//sottrazione gradi
 	if (right.degrees > degrees) {
 		std::cout << "sottrazione impossibile" << std::endl; 
-	}
-	degrees = degrees - right.degrees;
-	//sottarazione primi
-	if (right.first > first) {
-		degrees -= 1; 
-		first = first + 60 - right.first;
+		return *this;
 	}else{
-		first = first - right.first;
+		degrees = degrees - right.degrees;
+		//sottarazione primi
+		if (right.first > first) {
+			degrees -= 1;
+			first = first + 60 - right.first;
+		}
+		else {
+			first = first - right.first;
+		}
+		//sottrazione secondi
+		if (right.seconds > seconds) {
+			first -= 1;
+			seconds = seconds + 60 - right.seconds;
+		}
+		else {
+			seconds = seconds - right.seconds;
+		}
 	}
-	//sottrazione secondi
-	if (right.seconds > seconds){
-		first -= 1;
-		seconds = seconds + 60 - right.seconds;
-	}else{
-		seconds = seconds - right.seconds;
-	}
-
 	return *this;
 }

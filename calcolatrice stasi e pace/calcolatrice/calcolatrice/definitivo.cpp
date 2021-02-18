@@ -200,13 +200,18 @@ int main()
 
             do
             {
-                std::cout << "Prossimo numero : ";
-                std::cin >> x;
-                std::cout << endl;
-                sum += x;
-                x = 0;
-                i++;
-            } while (x);
+                std::string line;
+                std::getline(std::cin, line);
+                if (line == "") {}
+                else {
+                    x = 0;
+                    std::cout << "Prossimo numero : ";
+                    std::cin >> x;
+                    std::cout << endl;
+                    sum += x;
+                    i++;
+                }
+            } while (x != 0);
 
             media = sum / i;
             std::system("cls");

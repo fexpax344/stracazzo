@@ -194,7 +194,7 @@ int main()
             std::cout << "Il risultato dell'ultima operazione e':" << r << endl;
         }break;
         case 8: { //media
-        
+
 
             double media;
             int i = 0;
@@ -220,7 +220,7 @@ int main()
             media = sum / i;
             std::system("cls");
             std::cout << "La media e' " << media << endl;
-            
+
         }break;
         case 9: { //formula quadratica
             std::printf("coeficiente a: ");

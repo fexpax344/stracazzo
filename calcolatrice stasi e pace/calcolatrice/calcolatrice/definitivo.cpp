@@ -5,6 +5,7 @@
 #include "BasicDegree.h"
 #include <string>
 #include <vector>
+#define _USE_MATH_DEFINES
 
 using namespace std;
 int main()
@@ -34,21 +35,22 @@ int main()
             std::cout << "8)  Media;" << endl;
             std::cout << "9)  formula quadatica" << endl;
             std::cout << "10) operazioni gradi" << endl;
-            std::cout << "11) uscire " << endl;
+            std::cout << "11) equazioni gonimetriche" << endl;
+            std::cout << "12) uscire " << endl;
             std::cout << "" << endl;
             std::cout << "" << endl;
 
             std::cin >> scelta;
-            if (scelta < 0 || scelta>11)
+            if (scelta < 0 || scelta>12)
             {
-                std::cout << "Inserire un valore compreso tra 0 e 10" << endl;
+                std::cout << "Inserire un valore compreso tra 0 e 12" << endl;
                 std::cout << "" << endl;
             }
-        } while (scelta < 0 || scelta>10);
+        } while (scelta < 0 || scelta>11);
         switch (scelta)
         {
             //inizio casi
-        case 0: //colori 
+        case 0: { //colori 
             int a;
             do
             {
@@ -77,36 +79,36 @@ int main()
                         std::cout << "" << endl;
                     }
                 } while (a < 0 || a>10);
-                       switch (a)
-                       {
-                        case 0: std::system("color 0f");
-                        break;
-                        case 1: std::system("color 1f");
-                        break;
-                        case 2: std::system("color 2f");
-                        break;
-                        case 3: std::system("color 3f");
-                        break;
-                        case 4: std::system("color 4f");
-                        break;
-                        case 5: std::system("color 5f");
-                        break;
-                        case 6: std::system("color 6f");
-                        break;
-                        case 7: std::system("color 7f");
-                        break;
-                        case 8: std::system("color 8f");
-                        break;
-                        case 9: std::system("color 9f");
-                        break;
-                        }
+                switch (a)
+                {
+                case 0: std::system("color 0f");
+                    break;
+                case 1: std::system("color 1f");
+                    break;
+                case 2: std::system("color 2f");
+                    break;
+                case 3: std::system("color 3f");
+                    break;
+                case 4: std::system("color 4f");
+                    break;
+                case 5: std::system("color 5f");
+                    break;
+                case 6: std::system("color 6f");
+                    break;
+                case 7: std::system("color 7f");
+                    break;
+                case 8: std::system("color 8f");
+                    break;
+                case 9: std::system("color 9f");
+                    break;
+                }
             } while (a > -1 && a < 10);
-            
-               
-            
+
+
+
             std::system("cls");
-            break;
-        case 1: //addizione
+        }break;
+        case 1: { //addizione
             std::cout << "Immettere primo numero:" << endl;
             std::cin >> a;
             std::cout << "Immettere secondo numero:" << endl;
@@ -115,8 +117,8 @@ int main()
             std::system("cls");
             std::cout << "Il risultato dell'ultima operazione e':" << r << endl;
             std::cout << "" << endl;
-            break;
-        case 2: //sottrazione
+        }break;
+        case 2: { //sottrazione
             std::cout << "Immettere primo numero:" << endl;
             std::cin >> a;
             std::cout << "Immettere secondo numero:" << endl;
@@ -125,8 +127,8 @@ int main()
             std::system("cls");
             std::cout << "Il risultato dell'ultima operazione e':" << r << endl;
             std::cout << "" << endl;
-            break;
-        case 3: //moltiplicazione
+        }break;
+        case 3: { //moltiplicazione
             std::cout << "Immettere primo numero:" << endl;
             std::cin >> a;
             std::cout << "Immettere secondo numero:" << endl;
@@ -135,8 +137,8 @@ int main()
             std::system("cls");
             std::cout << "Il risultato dell'ultima operazione  e':" << r << endl;
             std::cout << "" << endl;
-            break;
-        case 4: //divisione
+        }break;
+        case 4: { //divisione
             std::cout << "Immettere primo numero:" << endl;
             std::cin >> a;
             std::cout << "Immettere secondo numero:" << endl;
@@ -164,15 +166,16 @@ int main()
                 std::cout << "Il risultato dell'ultima operazione  e':" << r << endl;
                 std::cout << "" << endl;
             }
-        case 5: //radice quadrata
+        }break;
+        case 5: { //radice quadrata
             std::cout << "Immettere numero:" << endl;
             std::cin >> a;
             r = sqrt(a);
             std::system("cls");
             std::cout << "Il risultato dell'ultima operazione  e':" << r << endl;
             std::cout << "" << endl;
-            break;
-        case 6: //esponenti
+        }break;
+        case 6: { //esponenti
             std::cout << "Immettere base:" << endl;
             std::cin >> a;
             std::cout << "Immettere esponente:" << endl;
@@ -180,8 +183,8 @@ int main()
             r = pow(a, b);
             std::system("cls");
             std::cout << "Il risultato dell'ultima operazione e':" << r << endl;
-            break;
-        case 7: //percentuale
+        }break;
+        case 7: { //percentuale
             std::cout << "Immettere valore iniziale:" << endl;
             std::cin >> a;
             std::cout << "Immettere percentuale:" << endl;
@@ -189,36 +192,37 @@ int main()
             r = (a * b) / 100;
             std::system("cls");
             std::cout << "Il risultato dell'ultima operazione e':" << r << endl;
-            break;
-        case 8: //media
-        { 
-            
+        }break;
+        case 8: { //media
+        
+
             double media;
             int i = 0;
-            int x = 0;
-            int sum = 0;
+            double x = 0;
+            double sum = 0;
+            std::string line;
 
             do
             {
-                std::string line;
-                std::getline(std::cin, line);
-                if (line == "") {}
-                else {
-                    x = 0;
-                    std::cout << "Prossimo numero : ";
+                x = 0;
+                std::cout << "Prossimo numero : ";
+                std::cin.ignore(100, '\n');
+                getline(std::cin, line);
+                if (line != "") {
+                    x = stod(line);
                     std::cin >> x;
                     std::cout << endl;
                     sum += x;
                     i++;
                 }
-            } while (x != 0);
+            } while (line != "");
 
             media = sum / i;
             std::system("cls");
             std::cout << "La media e' " << media << endl;
-            break;
-        }
-        case 9: //formula quadratica
+            
+        }break;
+        case 9: { //formula quadratica
             std::printf("coeficiente a: ");
             scanf_s("%f", &a);
             std::printf("coeficiente b: ");
@@ -236,39 +240,45 @@ int main()
 
             }
 
-            break;
-        case 10: //operazioni gradi
+        }break;
+        case 10: { //operazioni gradi
             string x;
             std::cout << "primo valore" << endl;
-            std::cout <<"gradi: ";
+            std::cout << "gradi: ";
             std::cin >> G;
             std::cout << ("primi: ");
             std::cin >> P;
-            std::cout <<("secondi: ");
+            std::cout << ("secondi: ");
             std::cin >> S;
-            cout << "operazione" << endl;
-            cin >> x;
+            std::cout << "operazione" << endl;
+            std::cin >> x;
             std::cout << "secondo valore" << endl;
-            std::cout <<("gradi: ");
+            std::cout << ("gradi: ");
             std::cin >> g;
-            std::cout <<("primi: ");
+            std::cout << ("primi: ");
             std::cin >> p;
-            std::cout <<("secondi: ");
+            std::cout << ("secondi: ");
             std::cin >> s;
-            if(x ==(string) "+"){
+            if (x == (string)"+") {
                 BasicDegree bella(G, P, S);
                 BasicDegree ciao = bella + BasicDegree(g, p, s);
                 ciao.print();
-            }else if(x == (string)"-"){
+            }
+            else if (x == (string)"-") {
                 BasicDegree bella(G, P, S);
                 BasicDegree ciao = bella - BasicDegree(g, p, s);
                 ciao.print();
-            }else{
+            }
+            else {
                 std::cout << "inserire un valore valido" << endl;
             }
-       
-        }
-    } while (scelta >= 0 && scelta <= 10);
+        }break;
+        case 11: {//equazioni goniometriche
 
-    return 0;
+
+        }break;
+        } while (scelta >= 0 && scelta <= 11);
+
+        return 0;
+    }
 }

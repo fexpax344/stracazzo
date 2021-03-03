@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <stdlib.h>
 #include <math.h>
 #include "2_grado.h"
@@ -6,6 +6,7 @@
 #include <string>
 #include <vector>
 #define _USE_MATH_DEFINES
+#include <cmath> 
 #include <thread>
 #include <chrono>
 
@@ -37,7 +38,7 @@ int main()
             std::cout << "8)  Media;" << endl;
             std::cout << "9)  formula quadatica" << endl;
             std::cout << "10) operazioni gradi" << endl;
-            std::cout << "11) equazioni gonimetriche" << endl;
+            std::cout << "11) funzioni gonimetriche" << endl;
             std::cout << "12) uscire " << endl;
             std::cout << "" << endl;
             std::cout << "" << endl;
@@ -52,7 +53,7 @@ int main()
         switch (scelta)
         {//inizio casi
             
-            //colori 
+            //colori ↓
         case 0:{  
             int a;
             do
@@ -111,7 +112,7 @@ int main()
 
             std::system("cls");
         }break;
-            //addizione
+            //addizione ↓
         case 1:{  
             std::cout << "Immettere primo numero:" << endl;
             std::cin >> a;
@@ -122,7 +123,7 @@ int main()
             std::cout << "Il risultato dell'ultima operazione e':" << r << endl;
             std::cout << "" << endl;
         }break;
-            //sottrazione
+            //sottrazione ↓
         case 2:{  
             std::cout << "Immettere primo numero:" << endl;
             std::cin >> a;
@@ -133,7 +134,7 @@ int main()
             std::cout << "Il risultato dell'ultima operazione e':" << r << endl;
             std::cout << "" << endl;
         }break;
-            //moltiplicazione
+            //moltiplicazione ↓
         case 3:{  
             std::cout << "Immettere primo numero:" << endl;
             std::cin >> a;
@@ -144,7 +145,7 @@ int main()
             std::cout << "Il risultato dell'ultima operazione  e':" << r << endl;
             std::cout << "" << endl;
         }break;
-            //divisione
+            //divisione ↓
         case 4:{  
             std::cout << "Immettere primo numero:" << endl;
             std::cin >> a;
@@ -174,7 +175,7 @@ int main()
                 std::cout << "" << endl;
             }
         }break;
-            //radice quadrata
+            //radice quadrata ↓
         case 5:{  
             std::cout << "Immettere numero:" << endl;
             std::cin >> a;
@@ -183,7 +184,7 @@ int main()
             std::cout << "Il risultato dell'ultima operazione  e':" << r << endl;
             std::cout << "" << endl;
         }break;
-            //esponenti
+            //esponenti ↓
         case 6:{  
             std::cout << "Immettere base:" << endl;
             std::cin >> a;
@@ -193,7 +194,7 @@ int main()
             std::system("cls");
             std::cout << "Il risultato dell'ultima operazione e':" << r << endl;
         }break;
-            //percentuale
+            //percentuale ↓
         case 7: {  
             std::cout << "Immettere valore iniziale:" << endl;
             std::cin >> a;
@@ -203,7 +204,7 @@ int main()
             std::system("cls");
             std::cout << "Il risultato dell'ultima operazione e':" << r << endl;
         }break;
-            //media
+            //media ↓
         case 8: {  
 
 
@@ -235,7 +236,7 @@ int main()
             std::cout << "La media e' " << media << endl;
 
         }break;
-            //formula quadratica
+            //formula quadratica ↓
         case 9: {  
             std::printf("coeficiente a: ");
             scanf_s("%f", &a);
@@ -255,7 +256,7 @@ int main()
             }
 
         }break;
-            //operazioni gradis
+            //operazioni gradi ↓ 
         case 10: {  
             std::string x;
             std::cout << "primo valore" << endl;
@@ -288,9 +289,26 @@ int main()
                 std::cout << "inserire un valore valido" << endl;
             }
         }break;
-            //equazioni goniometriche
+            //funzioni goniometriche ↓
         case 11:{
-            std::cout << "sei gay" << endl;
+            double S, C, T, sec, csc, cot;
+            double gradi;
+            double rad;
+            std::cout << "inserire un valore in gradi" << endl;
+            std::cin >> gradi;
+            rad = gradi * (M_PI / 180);
+            S = sin(rad);
+            C = cos(rad);
+            T = tan(rad);
+            sec = 1 / C;
+            csc = 1 / S;
+            cot = 1 / T;
+            std::cout << "seno=" << S << endl;
+            std::cout << "coseno=" << C << endl;
+            std::cout << "tangente=" << T << endl;
+            std::cout << "secante=" << sec << endl;
+            std::cout << "cosecante=" << csc << endl;
+            std::cout << "cotangente=" << cot << endl;
         }break;
         } while (scelta >= 0 && scelta <= 11);
 

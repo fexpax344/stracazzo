@@ -50,9 +50,10 @@ int main()
             }
         } while (scelta < 0 || scelta>11);
         switch (scelta)
-        {
-            //inizio casi
-        case 0: { //colori 
+        {//inizio casi
+            
+            //colori 
+        case 0:{  
             int a;
             do
             {
@@ -110,7 +111,8 @@ int main()
 
             std::system("cls");
         }break;
-        case 1: { //addizione
+            //addizione
+        case 1:{  
             std::cout << "Immettere primo numero:" << endl;
             std::cin >> a;
             std::cout << "Immettere secondo numero:" << endl;
@@ -120,7 +122,8 @@ int main()
             std::cout << "Il risultato dell'ultima operazione e':" << r << endl;
             std::cout << "" << endl;
         }break;
-        case 2: { //sottrazione
+            //sottrazione
+        case 2:{  
             std::cout << "Immettere primo numero:" << endl;
             std::cin >> a;
             std::cout << "Immettere secondo numero:" << endl;
@@ -130,7 +133,8 @@ int main()
             std::cout << "Il risultato dell'ultima operazione e':" << r << endl;
             std::cout << "" << endl;
         }break;
-        case 3: { //moltiplicazione
+            //moltiplicazione
+        case 3:{  
             std::cout << "Immettere primo numero:" << endl;
             std::cin >> a;
             std::cout << "Immettere secondo numero:" << endl;
@@ -140,7 +144,8 @@ int main()
             std::cout << "Il risultato dell'ultima operazione  e':" << r << endl;
             std::cout << "" << endl;
         }break;
-        case 4: { //divisione
+            //divisione
+        case 4:{  
             std::cout << "Immettere primo numero:" << endl;
             std::cin >> a;
             std::cout << "Immettere secondo numero:" << endl;
@@ -169,7 +174,8 @@ int main()
                 std::cout << "" << endl;
             }
         }break;
-        case 5: { //radice quadrata
+            //radice quadrata
+        case 5:{  
             std::cout << "Immettere numero:" << endl;
             std::cin >> a;
             r = sqrt(a);
@@ -177,7 +183,8 @@ int main()
             std::cout << "Il risultato dell'ultima operazione  e':" << r << endl;
             std::cout << "" << endl;
         }break;
-        case 6: { //esponenti
+            //esponenti
+        case 6:{  
             std::cout << "Immettere base:" << endl;
             std::cin >> a;
             std::cout << "Immettere esponente:" << endl;
@@ -186,7 +193,8 @@ int main()
             std::system("cls");
             std::cout << "Il risultato dell'ultima operazione e':" << r << endl;
         }break;
-        case 7: { //percentuale
+            //percentuale
+        case 7: {  
             std::cout << "Immettere valore iniziale:" << endl;
             std::cin >> a;
             std::cout << "Immettere percentuale:" << endl;
@@ -195,7 +203,8 @@ int main()
             std::system("cls");
             std::cout << "Il risultato dell'ultima operazione e':" << r << endl;
         }break;
-        case 8: { //media
+            //media
+        case 8: {  
 
 
             double media;
@@ -226,7 +235,8 @@ int main()
             std::cout << "La media e' " << media << endl;
 
         }break;
-        case 9: { //formula quadratica
+            //formula quadratica
+        case 9: {  
             std::printf("coeficiente a: ");
             scanf_s("%f", &a);
             std::printf("coeficiente b: ");
@@ -245,8 +255,9 @@ int main()
             }
 
         }break;
-        case 10: { //operazioni gradi
-            string x;
+            //operazioni gradis
+        case 10: {  
+            std::string x;
             std::cout << "primo valore" << endl;
             std::cout << "gradi: ";
             std::cin >> G;
@@ -263,12 +274,12 @@ int main()
             std::cin >> p;
             std::cout << ("secondi: ");
             std::cin >> s;
-            if (x == (string)"+") {
+            if (x == (std::string)"+") {
                 BasicDegree bella(G, P, S);
                 BasicDegree ciao = bella + BasicDegree(g, p, s);
                 ciao.print();
             }
-            else if (x == (string)"-") {
+            else if (x == (std::string)"-") {
                 BasicDegree bella(G, P, S);
                 BasicDegree ciao = bella - BasicDegree(g, p, s);
                 ciao.print();
@@ -277,12 +288,12 @@ int main()
                 std::cout << "inserire un valore valido" << endl;
             }
         }break;
-        case 11: {//equazioni goniometriche
-
-
+            //equazioni goniometriche
+        case 11:{
+            std::cout << "sei gay" << endl;
         }break;
         } while (scelta >= 0 && scelta <= 11);
 
         return 0;
-    }
+    } while (true);
 }

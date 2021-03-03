@@ -6,6 +6,8 @@
 #include <string>
 #include <vector>
 #define _USE_MATH_DEFINES
+#include <thread>
+#include <chrono>
 
 using namespace std;
 int main()
@@ -208,6 +210,8 @@ int main()
                 std::cout << "Prossimo numero : ";
                 std::cin.ignore(100, '\n');
                 getline(std::cin, line);
+                cin.ignore(100, '\n');
+                std::getline(std::cin, line);
                 if (line != "") {
                     x = stod(line);
                     std::cin >> x;

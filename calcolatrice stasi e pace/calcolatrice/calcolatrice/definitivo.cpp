@@ -18,7 +18,7 @@ int main()
 
     std::system("cls");
     std::cout << "::::::::::::::::::::::::::::::::::::" << endl;
-    std::cout << ":  sviluppato  by  pace e  stasi   :" << endl;
+    std::cout << ":  sviluppato  by  pace e stasi    :" << endl;
     std::cout << "::::::::::::::::::::::::::::::::::::" << endl;
     std::cout << "" << endl;
     std::cout << "" << endl;
@@ -39,17 +39,18 @@ int main()
             std::cout << "9)  formula quadatica" << endl;
             std::cout << "10) operazioni gradi" << endl;
             std::cout << "11) funzioni gonimetriche" << endl;
-            std::cout << "12) uscire " << endl;
+            std::cout << "12) problemi del vento" << endl;
+            std::cout << "13) uscire " << endl;
             std::cout << "" << endl;
             std::cout << "" << endl;
 
             std::cin >> scelta;
-            if (scelta < 0 || scelta>12)
+            if (scelta < 0 || scelta>13)
             {
-                std::cout << "Inserire un valore compreso tra 0 e 12" << endl;
+                std::cout << "Inserire un valore compreso tra 0 e 12 \a" << endl;
                 std::cout << "" << endl;
             }
-        } while (scelta < 0 || scelta>11);
+        } while (scelta < 0 || scelta>12);
         switch (scelta)
         {//inizio casi
             
@@ -291,12 +292,13 @@ int main()
         }break;
             //funzioni goniometriche ↓
         case 11:{
+            double gtr = 0.017453292;
             double S, C, T, sec, csc, cot;
             double gradi;
             double rad;
             std::cout << "inserire un valore in gradi" << endl;
             std::cin >> gradi;
-            rad = gradi * (M_PI / 180);
+            rad = gradi * gtr;
             S = sin(rad);
             C = cos(rad);
             T = tan(rad);
@@ -309,8 +311,149 @@ int main()
             std::cout << "secante=" << sec << endl;
             std::cout << "cosecante=" << csc << endl;
             std::cout << "cotangente=" << cot << endl;
+            std::cout << rad << endl;
         }break;
-        } while (scelta >= 0 && scelta <= 11);
+            //problemi del vento ↓
+        case 12:
+            int tipo;
+            double gtr = 0.017453292;
+            double rtg = 57.29577951;
+            double TC, TAS, Wa, Wv, GS, TH, αr, δr, wca, αg, δg;
+            
+
+            std::cout << "1° problema del vento" << endl;
+            std::cout << "2° problema del vento" << endl;
+            std::cout << "3° problema del vento" << endl;
+            std::cout << "4° problema del vento" << endl;
+            std::cin >> tipo;
+            if (tipo < 0 || tipo>4){//inizio condizione
+                std::cout << "inserisci un valore valido" << endl;
+            }else{
+            switch (tipo) {
+                //problema 1
+            case 1:{
+                //dichiarazione dati
+                std::cout << "primo problema del vento" << endl;
+                std::cout << "true course (TC)" << endl;
+                std::cin >> TC;
+                std::cout << "true air speed (TAS)" << endl;
+                std::cin >> TAS;
+                std::cout << "wind angle (Wa)" << endl;
+                std::cin >> Wa;
+                std::cout << "wind velocity (Wv)" << endl;
+                std::cin >> Wv;
+                //inizio formule
+                //sfalzo il vento
+                if (Wa <= 180) {
+                    Wa += 180;
+                }
+                else {
+                    Wa -= 180;
+                }
+                //calcolo α
+                if (Wa < TC) {
+                    αg = TC - Wa;
+                }
+                else {
+                    αg = Wa - TC;
+                };
+                if (αg > 180) {
+                    αg = 360 - αg;
+                }
+                //trovo wca
+                αr = αg * gtr;
+                αr = sin(αr);
+                wca = (αr * Wv) / TAS;
+                wca = asin(wca);
+                wca = wca * rtg;//trovo wca in gradi
+                int wcas = int(wca);//semolifico wca
+                δg = 180 - αg - wcas;//trovo gamma
+                δr = δg * gtr;
+                δr = sin(δr);
+                GS = (TAS * δr) / αr;//trovo GS
+                int GSs = int(GS);//semplifico GS
+                if (Wa > TC) {
+                    TH = TC - wcas;
+                }
+                else if (Wa < TC) {
+                    TH = TC + wcas;
+                }
+                else {
+                    TH = TC;
+                };//trovo TH
+                std::cout << "" << endl;
+                std::cout << "GS=" << GSs << endl;
+                std::cout << "TH=" << TH << endl;
+                std::cout << "wca=" << wcas << endl;
+                std::cout << "gamma=" << δg << endl;
+                std::cout << "alfa=" << αg << endl;
+            }break;//fine problema 1
+                //problema 2
+            case 2: {
+                int Wao;
+                //dichiarazione dati
+                std::cout << "secondo problema del vento" << endl;
+                std::cout << "true heding (TH)" << endl;
+                std::cin >> TH;
+                std::cout << "true air speed (TAS)" << endl;
+                std::cin >> TAS;
+                std::cout << "wind angle (Wa)" << endl;
+                std::cin >> Wao;
+                std::cout << "wind velocity (Wv)" << endl;
+                std::cin >> Wv;
+                //inizio formule
+                //sfalzo il vento
+                if (Wao <= 180) {
+                    Wa = Wao + 180;
+                }
+                else {
+                    Wa = Wao - 180;
+                }
+                //trovare gamma
+                if (Wao > TH) {
+                    δg = Wao - TH;
+                    if (δg > 180) {
+                        δg -= 360;
+                    }
+                }
+                else if (Wao < TH) {
+                    δg = TH - Wao;
+                    if (δg > 180) {
+                        δg -= 360;
+                    }
+                }
+                else {
+                    δg = 180;
+                }
+                δr = δg * gtr;
+                δr = sin(δr);//seno di gamma
+                GS = sqrt((pow(Wv,2)) + (pow(TAS,2)) - (2 * Wv * TAS * δr));
+                //int GSs = int(GS);
+                wca = (Wv * δr) / GS;
+                wca = asin(wca);//trovo wca
+                int wcas = int(wca);//semplifico wca
+                αg = 180 - wcas - δg;
+                if (Wa > TH) {
+                    TC = TH - wcas;
+                }
+                else if (Wa < TH) {
+                    TC = TH + wcas;
+                }
+                else {
+                    TC = TH;
+                };
+                std::cout << "" << endl;
+                std::cout << "GS=" << GS << endl;
+                std::cout << "TC=" << TC << endl;
+                std::cout << "wca=" << wcas << endl;
+                std::cout << "gamma=" << δg << endl;
+                std::cout << "alfa=" << αg << endl;
+
+            }break;//fine secondo problema
+            }//fine casi
+            while (true);
+            }//fine condizione
+        } while (scelta >= 0 && scelta <= 12);
 
         return 0;
     } while (true);

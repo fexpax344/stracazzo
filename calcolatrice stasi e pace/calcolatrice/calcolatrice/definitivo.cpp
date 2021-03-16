@@ -358,7 +358,7 @@ int main()
                     αg = Wa - TC;
                 };
                 if (αg > 180) {
-                    αg = 360 - αg;
+                    αg -= 360;
                 }
                 //trovo wca
                 αr = αg * gtr;
@@ -410,34 +410,30 @@ int main()
                     Wa = Wao - 180;
                 }
                 //trovare gamma
-                if (Wao > TH) {
+                if (Wao > TH){
                     δg = Wao - TH;
-                    if (δg > 180) {
-                        δg -= 360;
-                    }
-                }
-                else if (Wao < TH) {
+                }else{
                     δg = TH - Wao;
-                    if (δg > 180) {
-                        δg -= 360;
-                    }
                 }
-                else {
-                    δg = 180;
-                }
+                if (δg > 180) {
+                    δg = δg -360;
+                };
                 δr = δg * gtr;
-                δr = sin(δr);//seno di gamma
-                GS = sqrt((pow(Wv,2)) + (pow(TAS,2)) - (2 * Wv * TAS * δr));
-                //int GSs = int(GS);
-                wca = (Wv * δr) / GS;
+                double δc;
+                double δs;
+                δc = cos(δr);//coseno di gamma
+                GS = sqrt((pow(Wv,2)) + (pow(TAS,2)) - (2 * Wv * TAS * δc));
+                (int)floor(GS + 0.5);
+                δs = sin(δr);//seno di gamma
+                wca = (Wv * δs) / GS;
                 wca = asin(wca);//trovo wca
-                int wcas = int(wca);//semplifico wca
-                αg = 180 - wcas - δg;
+                (int) floor(wca + 0.5);
+                αg = 180 - wca - δg;
                 if (Wa > TH) {
-                    TC = TH - wcas;
+                    TC = TH - wca;
                 }
                 else if (Wa < TH) {
-                    TC = TH + wcas;
+                    TC = TH + wca;
                 }
                 else {
                     TC = TH;
@@ -445,7 +441,7 @@ int main()
                 std::cout << "" << endl;
                 std::cout << "GS=" << GS << endl;
                 std::cout << "TC=" << TC << endl;
-                std::cout << "wca=" << wcas << endl;
+                std::cout << "wca=" << wca << endl;
                 std::cout << "gamma=" << δg << endl;
                 std::cout << "alfa=" << αg << endl;
 

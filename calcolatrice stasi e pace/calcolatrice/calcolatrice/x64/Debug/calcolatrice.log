@@ -13,4 +13,6 @@ C:\Users\Utente\source\repos\stracazzo\calcolatrice stasi e pace\calcolatrice\ca
 C:\Users\Utente\source\repos\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(286,56): warning C4244: 'argomento': conversione da 'float' a 'int'. Possibile perdita di dati.
 C:\Users\Utente\source\repos\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(17,26): warning C4101: 'R': variabile locale senza riferimenti
 C:\Users\Utente\source\repos\stracazzo\calcolatrice stasi e pace\calcolatrice\calcolatrice\definitivo.cpp(17,23): warning C4101: 'D': variabile locale senza riferimenti
+  BasicDegree.cpp
+  Generazione del codice in corso...
   calcolatrice.vcxproj -> C:\Users\Utente\source\repos\stracazzo\calcolatrice stasi e pace\calcolatrice\x64\Debug\calcolatrice.exe

@@ -366,12 +366,12 @@ int main()
                 wca = (αr * Wv) / TAS;
                 wca = asin(wca);
                 wca = wca * rtg;//trovo wca in gradi
-                int wcas = int(wca);//semolifico wca
+                int wcas = int(wca + 0.5);//semolifico wca
                 δg = 180 - αg - wcas;//trovo gamma
                 δr = δg * gtr;
                 δr = sin(δr);
                 GS = (TAS * δr) / αr;//trovo GS
-                int GSs = int(GS);//semplifico GS
+                int GSs = int(GS + 0.5);//semplifico GS
                 if (Wa > TC) {
                     TH = TC - wcas;
                 }
@@ -423,25 +423,25 @@ int main()
                 double δs;
                 δc = cos(δr);//coseno di gamma
                 GS = sqrt((pow(Wv,2)) + (pow(TAS,2)) - (2 * Wv * TAS * δc));
-                (int)floor(GS + 0.5);
+                int GSs = int(GS + 0.5);
                 δs = sin(δr);//seno di gamma
-                wca = (Wv * δs) / GS;
+                wca = (Wv * δs) / GSs;
                 wca = asin(wca);//trovo wca
-                (int) floor(wca + 0.5);
-                αg = 180 - wca - δg;
+                int wcas = int(wca + 0.5);
+                αg = 180 - wcas - δg;
                 if (Wa > TH) {
-                    TC = TH - wca;
+                    TC = TH - wcas;
                 }
                 else if (Wa < TH) {
-                    TC = TH + wca;
+                    TC = TH + wcas;
                 }
                 else {
                     TC = TH;
                 };
                 std::cout << "" << endl;
-                std::cout << "GS=" << GS << endl;
+                std::cout << "GS=" << GSs << endl;
                 std::cout << "TC=" << TC << endl;
-                std::cout << "wca=" << wca << endl;
+                std::cout << "wca=" << wcas << endl;
                 std::cout << "gamma=" << δg << endl;
                 std::cout << "alfa=" << αg << endl;
 
